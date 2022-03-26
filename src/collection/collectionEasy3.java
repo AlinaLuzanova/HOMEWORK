@@ -15,6 +15,7 @@ public class collectionEasy3 {
         Scanner sc = new Scanner (reader);
 
         while(sc.hasNext())
+
         {
             int a = sc.nextInt();
             if (a == 0){

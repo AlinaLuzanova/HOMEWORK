@@ -14,6 +14,7 @@ public class collectionEasy3 {
         LinkedList <Integer> lList = new LinkedList<>();
         Scanner sc = new Scanner (reader);
 
+
         while(sc.hasNext())
 
         {

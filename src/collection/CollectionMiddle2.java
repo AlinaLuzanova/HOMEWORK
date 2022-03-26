@@ -15,16 +15,19 @@ public class CollectionMiddle2 {
         PrintWriter pw = new PrintWriter(file2, "UTF-8");
         Scanner sc = new Scanner(fr);
 
-        LinkedHashSet<Integer> set = new LinkedHashSet<>();
-
+        LinkedHashSet<Integer> hashSet = new LinkedHashSet<>();
         while (sc.hasNext()) {
             int a = sc.nextInt();
-            set.add(a);
+            hashSet.add(a);
         }
         fr.close();
-        pw.close();
-Object [] o = set.toArray();
-        System.out.println(o.toString());
 
+        Object[] objects = hashSet.toArray();
+        int[] array = new int[objects.length];
+        for (int i = 0; i < objects.length; i++) {
+            array[i] = (int) objects[i];
+            pw.println(array[i]);
+        }
+        pw.close();
     }
 }

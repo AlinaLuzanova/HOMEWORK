@@ -9,7 +9,7 @@ public class IOEasy2 {
         while (sc.hasNextLine()) {
             a++;
             String s = sc.nextLine();
-            System.out.println(s + a);
+            System.out.println(a + " " + s);
         }
         sc.close();
         }

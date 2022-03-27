@@ -10,9 +10,6 @@ public class IOEasy2 {
             a++;
             String s = sc.nextLine();
             System.out.println(s + a);
-            if(s == null){
-                System.out.println(" ");
-            }
         }
         sc.close();
         }

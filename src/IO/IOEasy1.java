@@ -8,7 +8,7 @@ public class IOEasy1 {
         FileReader reader = new FileReader(file1);
         BufferedReader buff = new BufferedReader(reader);
         String answer;
-        if ((answer = buff.readLine()) != null) {
+        while ((answer = buff.readLine()) != null) {
 
             System.out.println(answer);
         }
